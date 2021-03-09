@@ -16,8 +16,3 @@ EXPOSE 3000
 
 # start command
 CMD [ "yarn", "start" ]
-
-
-FROM nginx:latest
-WORKDIR /etc/nginx
-COPY nginx/nuxt.diaz.ir.conf ./conf.d
