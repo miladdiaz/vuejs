@@ -6,7 +6,6 @@ ADD . /app/
 
 # global install & update
 RUN npm i -g npm
-#RUN npm i -g yarn
 
 #RUN rm yarn.lock
 RUN yarn
@@ -17,3 +16,8 @@ EXPOSE 3000
 
 # start command
 CMD [ "yarn", "start" ]
+
+
+FROM nginx:latest
+WORKDIR /etc/nginx
+COPY nginx/nuxt.diaz.ir.conf ./conf.d
