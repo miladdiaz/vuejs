@@ -1,3 +1,10 @@
+# create nginx image
+FROM nginx:latest
+
+WORKDIR /etc/nginx
+COPY nginx/*.conf ./conf.d
+
+# create vue image
 FROM node:14
 
 # Create app directory
