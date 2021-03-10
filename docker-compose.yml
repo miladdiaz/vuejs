@@ -3,11 +3,10 @@ services:
   vue:
     image: vue:milad
     networks: 
-      - vue
-      - nginx_nginx
+      - vue_nginx
 networks: 
   vue:
-
+    external: true
 
 
     # docker network connect vuejs_default nginx_nginx_1
