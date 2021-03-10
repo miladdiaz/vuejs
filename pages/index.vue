@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        This is a test
+        This is a test2
       </h1>
       <div class="links">
         <a
