@@ -2,14 +2,14 @@ version: "3.9"
 services:
   nginx:
     container_name: nginx
-    image: nginx
+    image: nginx:artist
     ports:
       - "80:80"
     networks:
       - nginx
   vue:
     container_name: vue
-    image: vue
+    image: vue:artist
     networks:
       - vue
       - nginx
