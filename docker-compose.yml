@@ -2,7 +2,13 @@ version: "3.9"
 services: 
   vue:
     image: vue:milad
+    networks: 
+      - vue
+      - nginx
+networks: 
+  vue:
 
 
 
     # docker network connect vuejs_default nginx_nginx_1
+    #docker network connect nginx_default vuejs_vue_1
