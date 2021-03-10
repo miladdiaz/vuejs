@@ -2,14 +2,14 @@ version: "3.9"
 services:
   nginx:
     container_name: nginx
-    image: nginx:milad
+    image: nginx
     ports:
       - "80:80"
     networks:
       - nginx
   vue:
     container_name: vue
-    image: vue:milad
+    image: vue
     networks:
       - vue
       - nginx

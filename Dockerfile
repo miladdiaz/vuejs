@@ -1,12 +1,12 @@
 # create nginx image
-FROM nginx:latest as nginx1
+FROM nginx:latest AS nginx
 
 WORKDIR /etc/nginx
 COPY nginx/*.conf ./conf.d
 
 
 # create vue image
-FROM node:14 as vue1
+FROM node:14 AS vue
 
 WORKDIR /app
 ADD . /app/
