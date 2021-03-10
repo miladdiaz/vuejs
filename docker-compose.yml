@@ -4,7 +4,7 @@ services:
     image: vue:milad
     networks: 
       - vue
-      - nginx
+      - nginx_nginx
 networks: 
   vue:
 
