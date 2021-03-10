@@ -5,7 +5,7 @@ services:
     networks: 
       - vue_nginx
 networks: 
-  vue:
+  vue_nginx:
     external: true
 
 
